@@ -1,20 +1,12 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
+import React from "react";
 
-const Home: NextPage = () => {
+function Home() {
   return (
-    <div>
-      <Head>
-        <title>Bryta</title>
-        <meta name="Bryta" content="'필모깨기'를 도와주는 서비스" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <body>
-        <div>Bryta</div>
-      </body>
-    </div>
-  );
-};
+   <>
+    <h1>Home</h1>
+    <div>안녕하세요</div>
+  </>
+  )
+} 
 
 export default Home;
