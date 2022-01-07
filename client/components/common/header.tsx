@@ -1,12 +1,17 @@
 import styled from '@emotion/styled';
+import router from 'next/router'
 import React from 'react';
 
 function header() {
   const isLoggedIn = true;
 
+  const handleLogoClick = () => {
+    router.push('/')
+  }
+
   return (
     <HeaderWrap>
-      <img className="logo" src="/assets/icons/headerLogo.svg" alt=""></img>
+      <button className="logo" onClick={handleLogoClick}></button>
       <div className="user">
         {isLoggedIn ? ( 
         <div className="user__profile">
@@ -34,8 +39,10 @@ const HeaderWrap = styled.div`
 
   .logo {
     margin-left: 20px;
-    width: 450px;
+    width: 300px;
     height: 700px;
+    border: none;
+    background: url(/assets/icons/headerLogo.svg) no-repeat;
   }
   .user {
     &__anonymous {
