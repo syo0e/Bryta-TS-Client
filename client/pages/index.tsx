@@ -1,20 +1,22 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
+import Title from 'components/home/Title';
+import { mockClient } from 'lib/api'
+import React from 'react';
+import useSWR from 'swr'
+import Header from '../components/common/header';
+import { Actor } from 'types'
 
-const Home: NextPage = () => {
+function Home() {
+  const { data } = useSWR<{data: Actor[] }>('/actors', mockClient.get);
+
+  console.log('data', data?.data)
+
   return (
-    <div>
-      <Head>
-        <title>Bryta</title>
-        <meta name="Bryta" content="'필모깨기'를 도와주는 서비스" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <body>
-        <div>Bryta</div>
-      </body>
-    </div>
+    <>
+      <Header />
+      <Title />
+      <div>안녕하세요.</div>
+    </>
   );
-};
+}
 
 export default Home;
