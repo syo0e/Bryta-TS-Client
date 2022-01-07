@@ -43,6 +43,7 @@ const HeaderWrap = styled.div`
     height: 700px;
     border: none;
     background: url(/assets/icons/headerLogo.svg) no-repeat;
+    cursor:pointer;
   }
   .user {
     &__anonymous {
@@ -56,6 +57,7 @@ const HeaderWrap = styled.div`
         font-size: 20px;
         font-weight: bold;
         font-style: normal;
+        cursor:pointer;
       }
       &--signUp {
         margin-left: 40px;
@@ -65,6 +67,7 @@ const HeaderWrap = styled.div`
         font-size: 20px;
         font-weight: bold;
         font-style: normal;
+        cursor:pointer;
       }
     }
 
@@ -80,6 +83,7 @@ const HeaderWrap = styled.div`
         font-size:20px;
         font-weight: bold;
         font-style: normal;
+        cursor:pointer;
       }
 
       &--picture{
@@ -99,6 +103,7 @@ const HeaderWrap = styled.div`
         font-size: 20px;
         font-weight: bold;
         font-style: normal;
+        cursor:pointer;
       }
     }
   }
