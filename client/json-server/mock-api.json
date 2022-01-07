@@ -3,14 +3,19 @@
     {
       "id": 1,
       "name": "하정우",
-      "profileImageUrl": ""
+      "profileImageUrl": "",
+      "company": "",
+      "bodySize": "",
+      "debut":""
       
     },
     {
       "id": 2,
       "name": "유아인",
-      "profileImageUrl": ""
-      
+      "profileImageUrl": "",
+      "company": "",
+      "bodySize": "",
+      "debut":""
     }
   ]
 }
