@@ -2,7 +2,7 @@ import Title from 'components/home/Title';
 import { mockClient } from 'lib/api'
 import React from 'react';
 import useSWR from 'swr'
-import Header from '../components/common/header';
+import Header from '../components/common/Header';
 import { Actor } from 'types'
 
 function Home() {
@@ -12,7 +12,7 @@ function Home() {
 
   return (
     <>
-      <Header />
+      <Header isLoggedIn={false} />
       <Title />
       <div>안녕하세요.</div>
     </>

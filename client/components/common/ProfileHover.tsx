@@ -1,14 +1,13 @@
 import styled from '@emotion/styled';
-import { Profiler } from 'inspector';
 import router from 'next/router';
-import React, {ReactElement} from 'react';
+import React, { ReactElement } from 'react';
 
 function ProfileHover(): ReactElement {
-  return(
+  return (
     <Wrap>
       <button className="option">
         <img className="option__icon" src="/assets/icons/setting.svg" alt=""></img>
-        <p className="option__label">Account Setting</p>
+        <p className="option__label">Account Settings</p>
         <div className="option__border"></div>
       </button>
       <button className="option">
@@ -16,20 +15,19 @@ function ProfileHover(): ReactElement {
         <p className="option__label">Favorites</p>
       </button>
     </Wrap>
-  )
+  );
 }
 
 const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: space-around; */
   border-radius: 16px;
   box-shadow: 3px 3px 7px 4px rgba(98, 98, 98, 0.12);
   background: #f8fafc;
   width: 238px;
   height: 128px;
-
-
   .option {
     display: flex;
     flex-wrap: wrap;
@@ -39,26 +37,23 @@ const Wrap = styled.div`
     cursor: pointer;
     width: 204px;
     height: 30px;
-
     &__icon {
       margin-left: 10px;
       width: 19px;
       height: 19px;
     }
-
     &__label {
       margin-left: 12px;
       line-height: 22px;
       color: #9d9d9d;
-      font-size:16px;
+      font-size: 16px;
       font-weight: 500;
       font-style: normal;
     }
-
     &__border {
       opacity: 0.53;
       margin-top: 7px;
-      background: #fce5cd;
+      background: #6465f4;
       width: 204px;
       height: 1px;
     }
@@ -66,4 +61,3 @@ const Wrap = styled.div`
 `;
 
 export default ProfileHover;
-
