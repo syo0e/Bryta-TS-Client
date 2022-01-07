@@ -1,0 +1,16 @@
+{
+  "actors": [
+    {
+      "id": 1,
+      "name": "하정우",
+      "profileImageUrl": ""
+      
+    },
+    {
+      "id": 2,
+      "name": "유아인",
+      "profileImageUrl": ""
+      
+    }
+  ]
+}
