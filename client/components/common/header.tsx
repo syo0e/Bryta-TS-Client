@@ -22,25 +22,29 @@ function Header({isLoggedIn = false}: HeaderProps): ReactElement {
 
   return (
     <HeaderWrap>
-     <div className="header">
+      <div className="header">
         <button className="logo" onClick={handleLogoClick}></button>
         <div className="user">
           {isLoggedIn ? (
             <div className="user__profile">
               <p className="user__profile--logout">Log out</p>
               <button className="user__profile--button" onClick={handleProfileClick}>
-                <img className="user__profile--button--picture" src="" alt=""></img>
+                <img
+                  className="user__profile--button--picture"
+                  src="/assets/icons/DefaultProfile.svg"
+                  alt=""
+                ></img>
                 <p className="user__profile--button--name">Name</p>
               </button>
             </div>
           ) : (
-           <div className="user__anonymous">
+            <div className="user__anonymous">
               <p className="user__anonymous--login">Log in</p>
               <p className="user__anonymous--signUp">Sign up</p>
             </div>
           )}
-       </div>
-     </div>
+        </div>
+      </div>
       {isProfileClicked && <ProfileHover />}
     </HeaderWrap>
   );
