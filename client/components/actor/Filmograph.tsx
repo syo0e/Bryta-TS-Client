@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 
-function NewlyAdded(): ReactElement {
+function Filmograph(): ReactElement {
   return <div></div>;
 }
 
-export default NewlyAdded;
+export default Filmograph;
