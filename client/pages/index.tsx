@@ -1,3 +1,4 @@
+import ActorCarousel from '@components/home/ActorCarousel';
 import Title from 'components/home/Title';
 import { mockClient } from 'lib/api'
 import React from 'react';
@@ -14,7 +15,7 @@ function Home() {
     <>
       <Header isLoggedIn={false} />
       <Title />
-      <div>안녕하세요.</div>
+      <ActorCarousel />
     </>
   );
 }

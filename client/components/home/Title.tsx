@@ -32,7 +32,7 @@ const TitleWrap = styled.div`
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
     line-height: 60px;
     white-space: nowrap;
-    color:  #fca336;
+    color: #ffffff;
     font-size: 34px;
     font-weight: bold;
     font-style: normal;
