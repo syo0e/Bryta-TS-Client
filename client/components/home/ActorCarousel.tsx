@@ -27,10 +27,9 @@ function ActorCarousel(): ReactElement {
 const Wrap = styled.div`
   display: flex;
   position: absolute;
-  justify-content: space-between;
-  margin-right: 140px;
-  margin-left: 140px;
-  width: 1160px;
+  justify-content: center;
+  margin-top: -114px;
+  width: 100%;
   height: 270px;
 `;
 

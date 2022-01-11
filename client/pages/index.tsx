@@ -13,7 +13,7 @@ function Home() {
 
   return (
     <>
-      <Header isLoggedIn={false} />
+      <Header isLoggedIn={true} />
       <Title />
       <ActorCarousel />
     </>
