@@ -62,6 +62,8 @@ const Styled = {
   Root: styled.div`
     display: flex;
     background-color: #f6f6f6;
+    margin-top: 30px;
+    padding-bottom: 70px;
     color: #9d9d9d;
   `,
   Left: styled.div`
