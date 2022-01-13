@@ -26,8 +26,8 @@ const Wrap = styled.div`
   border-radius: 16px;
   box-shadow: 3px 3px 7px 4px rgba(98, 98, 98, 0.12);
   background: #f8fafc;
-  width: 238px;
-  height: 128px;
+  width: 210px;
+  height: 97px;
   .option {
     display: flex;
     flex-wrap: wrap;
@@ -53,7 +53,7 @@ const Wrap = styled.div`
     &__border {
       opacity: 0.53;
       margin-top: 7px;
-      background: #6465f4;
+      background: #f1be15;
       width: 204px;
       height: 1px;
     }

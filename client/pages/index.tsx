@@ -4,6 +4,7 @@ import { mockClient } from 'lib/api'
 import React from 'react';
 import useSWR from 'swr'
 import Header from '../components/common/Header';
+import Footer from '@components/common/Footer';
 import { Actor } from 'types'
 
 function Home() {
@@ -15,7 +16,8 @@ function Home() {
     <>
       <Header isLoggedIn={true} />
       <Title />
-      <ActorCarousel />
+      {/* <ActorCarousel /> */}
+      <Footer />
     </>
   );
 }
