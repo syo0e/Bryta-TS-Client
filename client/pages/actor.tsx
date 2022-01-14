@@ -3,7 +3,7 @@ import Filmograph from '@components/actor/Filmograph';
 import Header from '../components/common/Header';
 import React, { ReactElement } from 'react';
 
-function actor(): ReactElement {
+function Actor(): ReactElement {
   return (
     <div>
       <Header isLoggedIn={true} />
@@ -13,4 +13,4 @@ function actor(): ReactElement {
   );
 }
 
-export default actor;
+export default Actor;
